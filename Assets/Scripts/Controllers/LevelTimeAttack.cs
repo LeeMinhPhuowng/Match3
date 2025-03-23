@@ -9,8 +9,6 @@ public class LevelTimeAttack : LevelCondition
 
     private GameManager m_mngr;
 
-    private BoardController m_board;
-
     public override void Setup(float value, Text txt, GameManager mngr)
     {
         base.Setup(value, txt, mngr);
@@ -21,7 +19,29 @@ public class LevelTimeAttack : LevelCondition
 
         UpdateText();
     }
+    /*  public override void Setup(float value, Text txt, GameManager mngr)
+      {
+          base.Setup(value, txt, mngr);
 
+          m_mngr = mngr;
+
+          m_time = value;
+
+          UpdateText();
+      }
+   
+    public override void Setup(float value, Text txt, BoardController board)
+    {
+        base.Setup(value, txt, board);
+        if (board == null) Debug.Log("vc");
+        else Debug.Log("hahaha");
+        
+        m_txt = txt;
+        m_boardController = board;
+        m_time = value;
+        UpdateText();
+    }
+    */
     private void Update()
     {
         if (m_conditionCompleted) return;

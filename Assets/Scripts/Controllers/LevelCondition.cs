@@ -15,7 +15,7 @@ public class LevelCondition : MonoBehaviour
 
     protected bool m_conditionCompleted = false;
 
-    protected float time;
+    
 
     public virtual void Setup(Text txt, BoardController board)
     {
@@ -34,7 +34,7 @@ public class LevelCondition : MonoBehaviour
         m_boardController = board;
         
     }
-
+   
 
     protected virtual void UpdateText() { }
 

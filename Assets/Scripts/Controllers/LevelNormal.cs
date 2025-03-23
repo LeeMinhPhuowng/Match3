@@ -9,6 +9,10 @@ public class LevelNormal : LevelCondition
     private BoardController m_board;
     private Text m_text;
 
+    private void Awake()
+    {
+        Setup(m_text, m_board);
+    }
     public override void Setup(Text txt, BoardController board)
     {
         base.Setup(txt, board);
